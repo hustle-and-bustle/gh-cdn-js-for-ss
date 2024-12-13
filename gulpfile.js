@@ -8,7 +8,8 @@ gulp.task('compress', function() {
           src:'.js',
           min:'.min.js'
       },
-      //noSource:true
+      //noSource:true,
+      mangle:false
   }))
     .pipe(gulp.dest('dist'))
 });
