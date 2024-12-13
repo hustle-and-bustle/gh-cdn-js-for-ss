@@ -61,6 +61,7 @@ $(() => {
     }
 
     setTimeout(() => {
+        if ($('.empty-message').length) return; 
         add_continue_button();
     }, 50);
 }); 
