@@ -34,6 +34,7 @@ $(() => {
     if (location.pathname != '/cart') return; // bail if not cart
 
     if ($('.empty-message').length) return; // bail if empty
+      console.log("empty message", $('.empty-message').length);
 
     const selector = '[data-test=remove-item]';
 
@@ -62,5 +63,5 @@ $(() => {
 
     setTimeout(() => {
         add_continue_button();
-    }, 50);
+    }, 100);
 }); 
