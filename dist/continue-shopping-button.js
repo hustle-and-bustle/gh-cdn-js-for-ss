@@ -33,7 +33,7 @@ $(() => {
 
     if (location.pathname != '/cart') return; // bail if not cart
 
-    
+    //if ($('.empty-message').length) return; // bail if empty
 
     const selector = '[data-test=remove-item]';
 
@@ -61,7 +61,7 @@ $(() => {
         $cartTitle.remove();
     }
 
-    setTimeout(() => { 
+    setTimeout(() => {
         add_continue_button();
     }, 50);
 }); 
